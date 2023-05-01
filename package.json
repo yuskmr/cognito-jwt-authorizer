@@ -1,0 +1,16 @@
+{
+  "name": "cognito-jwt-authorizer",
+  "version": "1.0.0",
+  "description": "A simple example of a Lambda authorizer for AWS API Gateway that implements Cognito JWT token verification and RBAC using aws-jwt-verify library.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bundle": "rm -f cognito-jwt-authorizer.zip ; zip cognito-jwt-authorizer.zip -r *.js *.json node_modules/"
+  },
+  "type": "module",
+  "author": "yuskmr",
+  "license": "MIT",
+  "dependencies": {
+    "aws-jwt-verify": "^4.0.0"
+  }
+}
